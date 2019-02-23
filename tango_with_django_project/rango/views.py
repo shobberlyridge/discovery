@@ -2,4 +2,4 @@ from django.shortcuts import render
 
 from django.http import HttpResponse
 def index(request):
-    return HttpResponse("Rango says hey there partner!, after git")
+    return HttpResponse("After GIT, Rango says hey there partner!")
