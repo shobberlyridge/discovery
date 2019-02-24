@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+{% load staticfiles %} <!-- New line -->
+
+<html>
+	
+	<head>
+		<title>Rango</title>
+	</head>
+	
+	<body>
+		<h1>Rango says...</h1>
+		<div>
+			here is the About page! <br />
+			This tutorial was done by me! <br />
+			<strong>{{ aboutmessage }}</strong><br />
+		</div>
+		<div>
+			<a href="/">Index</a><br />
+			<img src="{{ MEDIA_URL}}cat.jpg" alt= "Picture of the About Cat" />
+		</div>
+	</body>
+	
+</html>
