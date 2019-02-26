@@ -22,7 +22,7 @@ def index(request):
 	# Retrieve the top 5 only - or all if less than 5.
 	# Place the list in our context_dict dictionary
 	# that will be passed to the template engine.
-	category_list = Category.objects.order_by('-likes')[:5]
+	category_list = Category.objects.order_by('-likes')[:25]
 	page_list = Page.objects.order_by('-views')[:5]
 	context_dict = {'categories': category_list, 'pages': page_list}
 	# Render the response and send it back!

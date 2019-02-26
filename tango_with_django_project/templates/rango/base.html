@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+{% load rango_template_tags %}
 {% load staticfiles %}
 
 
@@ -17,12 +17,12 @@
             {% block body_block %}
             {% endblock %}
         </div>
- <!--       <div>
+        <div>
 			{% block sidebar_block %}
-				
+				{% get_category_list %}
 			{% endblock %}
-        </div>    -->
-        <hr />
+        </div>
+                <hr />
         <div>
             <ul>
                 <li><a href="{% url 'add_category' %}">Add New Category</a></li>
