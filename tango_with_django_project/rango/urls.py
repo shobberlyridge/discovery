@@ -19,4 +19,7 @@ urlpatterns = [
     # url(r'^profile/(?P<username>[\w\-]+)/$', views.profile, name='profile'),
     # url(r'^profiles/$', views.list_profiles, name='list_profiles'),
     url(r'^register/$', views.register, name='register'), # New pattern!
+    url(r'^login/$', views.user_login, name='login'),
+    url(r'^restricted/', views.restricted, name='restricted'),
+    url(r'^logout/$', views.user_logout, name='logout'),
 ]
